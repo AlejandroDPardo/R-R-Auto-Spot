@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Detailing & Oil Change Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: green;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            border-bottom: 1px solid green;
+        }
+        .service {
+            background-color: rgba(0, 128, 0, 0.7); /* Semi-transparent green */
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: darkgreen;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Car Detailing & Oil Change Services</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Detailing</h3>
+                <p>Complete interior and exterior detailing service.</p>
+                <button onclick="bookService('Detailing')">Book Now</button>
+            </div>
+            <div class="service">
+                <h3>Oil Change</h3>
+                <p>Quick and efficient oil change services.</p>
+                <button onclick="bookService('Oil Change')">Book Now</button>
+            </div>
+            <div class="service">
+                <h3>Car Polishing</h3>
+                <p>High-quality polishing to make your car shine.</p>
+                <button onclick="bookService('Car Polishing')">Book Now</button>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We provide top-notch car detailing and maintenance services with a focus on customer satisfaction.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Car Detailing Services</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
